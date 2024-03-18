@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="control.TransaccionesController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="574.0" style="-fx-border-color: black; -fx-background-color: #FFF59E;">
+         <children>
+            <Button fx:id="btn_retiro" disable="true" layoutX="30.0" layoutY="95.0" mnemonicParsing="false" onAction="#do_retiro" prefHeight="33.0" prefWidth="113.0" text="Retiro">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_avance" disable="true" layoutX="30.0" layoutY="152.0" mnemonicParsing="false" onAction="#do_avance" prefHeight="33.0" prefWidth="113.0" text="Avance">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_saldo" disable="true" layoutX="30.0" layoutY="215.0" mnemonicParsing="false" onAction="#do_saldo" prefHeight="33.0" prefWidth="113.0" text="Saldos">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_pagos" disable="true" layoutX="30.0" layoutY="270.0" mnemonicParsing="false" onAction="#do_pagos" prefHeight="33.0" prefWidth="113.0" text="Pagos">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_deposito" disable="true" layoutX="401.0" layoutY="95.0" mnemonicParsing="false" onAction="#do_deposito" prefHeight="33.0" prefWidth="113.0" text="Deposito">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_compra" disable="true" layoutX="401.0" layoutY="152.0" mnemonicParsing="false" onAction="#do_compra" prefHeight="33.0" prefWidth="113.0" text="Compra">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cambioClave" layoutX="401.0" layoutY="215.0" mnemonicParsing="false" onAction="#do_cambioClave" prefHeight="33.0" prefWidth="113.0" text="Cambio clave">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_salir" layoutX="401.0" layoutY="270.0" mnemonicParsing="false" onAction="#do_salir" prefHeight="33.0" prefWidth="113.0" text="Salir" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="label_nombre" alignment="CENTER" layoutX="231.0" layoutY="14.0" prefHeight="41.0" prefWidth="113.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="190.0" layoutY="55.0" prefHeight="17.0" prefWidth="195.0" text="Porfavor seleccione su transaccion" />
+            <ComboBox fx:id="cbx_producto" layoutX="205.0" layoutY="95.0" onAction="#do_producto" prefHeight="25.0" prefWidth="165.0" promptText="Seleccione el producto" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

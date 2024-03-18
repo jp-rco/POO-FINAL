@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.PrincipalController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="579.0">
+         <children>
+            <ImageView fitHeight="415.0" fitWidth="426.0" layoutX="180.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesFijas/interfaz.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-20.0" layoutY="-17.0" prefHeight="406.0" prefWidth="200.0" style="-fx-background-color: #1D67F9;">
+               <children>
+                  <ImageView fx:id="btn_clientes" fitHeight="83.0" fitWidth="90.0" layoutX="59.0" layoutY="33.0" onMouseClicked="#ir_clientes" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesFijas/clientes.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="btn_productos" fitHeight="83.0" fitWidth="90.0" layoutX="59.0" layoutY="161.0" onMouseClicked="#ir_productos" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesFijas/tarjeta.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="btn_trans" fitHeight="83.0" fitWidth="90.0" layoutX="59.0" layoutY="285.0" onMouseClicked="#ir_trans" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesFijas/transacciones.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="68.0" layoutY="116.0" prefHeight="21.0" prefWidth="64.0" text="Clientes" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="233.0" prefHeight="21.0" prefWidth="75.0" text="Productos" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="368.0" prefHeight="21.0" prefWidth="100.0" text="Transacciones" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fx:id="btn_salida" fitHeight="52.0" fitWidth="49.0" layoutX="530.0" onMouseClicked="#doSalir" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesFijas/3917770.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AllProductosController">
+   <children>
+      <Pane layoutX="9.0" layoutY="9.0" prefHeight="330.0" prefWidth="771.0" style="-fx-border-color: #000000; -fx-background-color: #558EFF;">
+         <children>
+            <TableView fx:id="tblAllProd" layoutX="14.0" layoutY="63.0" prefHeight="211.0" prefWidth="747.0">
+              <columns>
+                <TableColumn fx:id="colIdProd" prefWidth="110.0" text="idProducto" />
+                <TableColumn fx:id="colIdCli" prefWidth="108.0" text="idCliente" />
+                  <TableColumn fx:id="colNomProd" prefWidth="265.0" text="Producto" />
+                  <TableColumn fx:id="colApert" prefWidth="117.0" text="Apertura" />
+                  <TableColumn fx:id="colDis" prefWidth="143.94549560546875" text="Disponible" />
+              </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="75.0" style="-fx-border-color: #000000;" text="idCliente:">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="263.0" layoutY="14.0" prefHeight="35.0" prefWidth="75.0" style="-fx-border-color: #000000;" text="Producto:">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="504.0" layoutY="14.0" prefHeight="35.0" prefWidth="75.0" style="-fx-border-color: #000000;" text="Buscar id:">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <ComboBox fx:id="cbxIdeProd" layoutX="95.0" layoutY="14.0" onAction="#doFiltroIdCliente" onMouseClicked="#doRestaurarProd" prefHeight="35.0" prefWidth="153.0" />
+            <ComboBox fx:id="cbxNombreProd" layoutX="344.0" layoutY="14.0" onAction="#doFiltroProducto" onMouseClicked="#doRestaurarCli" prefHeight="35.0" prefWidth="153.0" />
+            <TextField fx:id="txfLet" layoutX="586.0" layoutY="14.0" onAction="#doFiltroText" onKeyTyped="#buscar" prefHeight="35.0" prefWidth="151.0" />
+            <Button fx:id="btnRegresar" layoutX="12.0" layoutY="282.0" mnemonicParsing="false" onAction="#doRegresar" prefHeight="35.0" prefWidth="747.0" text="Regresar" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
